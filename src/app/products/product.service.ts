@@ -23,6 +23,7 @@ export class ProductService {
         if(err.error instanceof ErrorEvent){
             errorMessage=`An error occurred: ${err.error.message}`;
         }
+        
         else {
             errorMessage=`Server returned code ${err.status}, error message is: ${err.message}`
         }
